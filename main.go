@@ -1,18 +1,15 @@
 package main
 
 import (
+	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
 	"net/http"
 	"os"
 	"path"
-	"strings"
-
-	"fmt"
-
-	"encoding/json"
-
 	"path/filepath"
+	"strings"
 
 	"github.com/bitrise-io/go-utils/command"
 	"github.com/bitrise-io/go-utils/fileutil"
