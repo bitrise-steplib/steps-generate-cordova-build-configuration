@@ -1,11 +1,11 @@
 title: Generate Cordova build configuration
-summary: Generate a build.json file specifying code signing parameters for the Cordova Archive Step. 
+summary: Generate a `build.json` file specifying code signing parameters for the **Cordova Archive** Step. 
 description: |-
-  "To sign a Cordova app, you need a build.json file with the appropriate code signing settings. This Step creates that file based on your inputs, and passes it on to the Cordova Archive Step that builds your app. The Step takes code signing settings for both [iOS](http://cordova.apache.org/docs/en/8.x/guide/platforms/ios/index.html#using-buildjson) and [Android](http://cordova.apache.org/docs/en/8.x/guide/platforms/android/index.html#using-buildjson) projects.
+  "To sign a Cordova app, you need a `build.json` file with the appropriate code signing settings. This Step creates that file based on your inputs, and passes it on to the **Cordova Archive** Step that builds your app. The Step takes code signing settings for both [iOS](http://cordova.apache.org/docs/en/8.x/guide/platforms/ios/index.html#using-buildjson) and [Android](http://cordova.apache.org/docs/en/8.x/guide/platforms/android/index.html#using-buildjson) projects.
   
   ### Configuring the Step
   
-  Before you start, make sure you have either the **Certificate and profile installer** Step or the iOS Auto Provisioning Step in your Workflow. Either one is required for [code signing iOS apps](https://devcenter.bitrise.io/code-signing/ios-code-signing/ionic-cordova-code-signing/). 
+  Before you start, make sure you have either the **Certificate and profile installer** Step or the **iOS Auto Provisioning Step** in your Workflow. Either one is required for [code signing iOS apps](https://devcenter.bitrise.io/code-signing/ios-code-signing/ionic-cordova-code-signing/). 
   
   You also need to upload the appropriate iOS code signing files (certificate and provisioning profile), and an [Android keystore file](https://developer.android.com/studio/publish/app-signing#generate-key). 
   
@@ -20,7 +20,7 @@ description: |-
      - **Alias**
      - **Private key password**
      
-  If all goes well, the Step should export the $BITRISE_CORDOVA_BUILD_CONFIGURATION Environment Variable that is used by the **Cordova Archive** Step. 
+  If all goes well, the Step should export the `$BITRISE_CORDOVA_BUILD_CONFIGURATION` Environment Variable that is used by the **Cordova Archive** Step. 
   
   ### Useful links
   
