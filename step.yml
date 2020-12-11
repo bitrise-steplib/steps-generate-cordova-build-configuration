@@ -59,8 +59,8 @@ inputs:
   - development_team: 
     opts:
       title: Development Team
-      summary: "The development team (Team ID) to use for code signing, __example:__ `1MZX23ABCD4`"
-      description: "The development team (Team ID) to use for code signing, __example:__ `1MZX23ABCD4`"
+      summary: "The development team (Team ID) to use for code signing, __for example__ `1MZX23ABCD4`"
+      description: "The development team (Team ID) to use for code signing, __for example__ `1MZX23ABCD4`"
   - code_sign_identity:
     opts:
       title: Code Signing Identity
@@ -68,8 +68,8 @@ inputs:
       description: |-
         Code Signing Identity to use for signing.
 
-        Specify Code Signing Identity as full ID ( __example:__ `iPhone Developer: Bitrise Bot (VV2J4SV8V4)`)  
-        or specify code sign group ( __example:__ `iPhone Developer` or `iPhone Distribution` ).
+        Specify Code Signing Identity as full ID ( __for example__ `iPhone Developer: Bitrise Bot (VV2J4SV8V4)`)  
+        or specify code sign group ( __for example__ `iPhone Developer` or `iPhone Distribution` ).
   - automatic_provisioning: "no"
     opts:
       title: Enable to allow Xcode to automatically manage provisioning profiles
@@ -77,7 +77,7 @@ inputs:
       description: |-
         Enable to allow Xcode to automatically manage provisioning profiles.
 
-        If this input is set to: `yes` the `Provisioning Profile` input will be omitted,  
+        If this input is set to `yes`, the `Provisioning Profile` input will be omitted,  
         otherwise `Provisioning Profile` is required for iOS code signing.
       value_options:
       - "no"
@@ -89,8 +89,8 @@ inputs:
       description: |-
         Provisioning Profile to be used for signing.
 
-        Use Provisioning Profile's UUID ( __example:__ `c5be4123-1234-4f9d-9843-0d9be985a068` )  
-        or specify Profile's name ( __example:__ `Bitrise development - (com.bitrise.cordovasample)` ).
+        Use Provisioning Profile's UUID ( __for example__ `c5be4123-1234-4f9d-9843-0d9be985a068` )  
+        or specify Profile's name ( __for example__ `Bitrise development - (com.bitrise.cordovasample)` ).
   - package_type: "none"
     opts:
       title: Packaging Type
@@ -109,8 +109,8 @@ inputs:
       description: |-
         Path to a binary file which can hold a set of keys.
 
-        For __remote keystores__ you can provide any download location, example: `https://URL/TO/keystore.jks`.  
-        For __local keystores__ provide file path, example: `file://PATH/TO/keystore.jks`.
+        For __remote keystores__ you can provide any download location, for example, `https://URL/TO/keystore.jks`.  
+        For __local keystores__ provide file path, for example, `file://PATH/TO/keystore.jks`.
   - keystore_password: $BITRISEIO_ANDROID_KEYSTORE_PASSWORD
     opts:
       title: Keystore password
