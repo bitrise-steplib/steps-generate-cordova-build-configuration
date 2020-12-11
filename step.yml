@@ -1,7 +1,7 @@
 title: Generate Cordova build configuration
 summary: Generate a `build.json` file specifying code signing parameters for the **Cordova Archive** Step. 
 description: |-
-  "To sign a Cordova app, you need a `build.json` file with the appropriate code signing settings. This Step creates that file based on your inputs, and passes it on to the **Cordova Archive** Step that builds your app. The Step takes code signing settings for both [iOS](http://cordova.apache.org/docs/en/8.x/guide/platforms/ios/index.html#using-buildjson) and [Android](http://cordova.apache.org/docs/en/8.x/guide/platforms/android/index.html#using-buildjson) projects.
+  "To sign a Cordova app, you need a `build.json` file with the appropriate code signing settings. This Step creates that file based on your inputs, and passes it on to the **Cordova Archive** or **Ionic Archive** Step that builds your app. The Step takes code signing settings for both [iOS](http://cordova.apache.org/docs/en/8.x/guide/platforms/ios/index.html#using-buildjson) and [Android](http://cordova.apache.org/docs/en/8.x/guide/platforms/android/index.html#using-buildjson) projects.
   
   ### Configuring the Step
   
